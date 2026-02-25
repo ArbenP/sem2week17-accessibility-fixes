@@ -42,18 +42,23 @@
             <form id="signup" aria-labelledby="form-heading">
               <h3 id="form-heading">Create your account</h3>
               <div class="form-group">
-                <input type="text" id="name" name="name" required autocomplete="name">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Full name">
               </div>
               <div class="form-group">
-                <input type="text" id="sid" name="sid" required autocomplete="username">
+                <label for="sid">Student ID</label>
+                <input type="text" id="sid" name="sid" required autocomplete="username" placeholder="Student ID">
               </div>
               <div class="form-group">
-                <input type="email" id="email" name="email" required autocomplete="email">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="text" id="course" name="course">
+                <label for="course">Course</label>
+                <input type="text" id="course" name="course" placeholder="Course">
               </div>
               <div class="form-group">
+                <label for="year">Year of study</label>
                 <select id="year" name="year">
                   <option value="">Select year</option>
                   <option value="1">Year 1</option>
@@ -63,12 +68,16 @@
                 </select>
               </div>
               <div class="form-group">
-                <input type="checkbox" name="location" id="location">
-                <span>Share location for personalised campus recommendations (optional)</span>
+                <label class="checkbox-label" for="location">
+                  <input type="checkbox" name="location" id="location">
+                  Share location for personalised campus recommendations (optional)
+                </label>
               </div>
               <div class="form-group">
-                <input type="checkbox" name="ai" id="ai">
-                <span>Enable AI recommendations based on my course and interests</span>
+                <label class="checkbox-label" for="ai">
+                  <input type="checkbox" name="ai" id="ai">
+                  Enable AI recommendations based on my course and interests
+                </label>
               </div>
               <button type="submit">Create account</button>
             </form>
